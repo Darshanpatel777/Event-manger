@@ -42,6 +42,8 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation (libs.glide)
     implementation (libs.autoimageslider.v140)
+    implementation (libs.viewpager2)
+
 
 
 }
