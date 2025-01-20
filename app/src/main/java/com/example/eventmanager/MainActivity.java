@@ -8,6 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
@@ -50,10 +51,19 @@ public class MainActivity extends AppCompatActivity {
         tablayout.setupWithViewPager(viewpager);
 
 
-
-
-
-
-
+        if(savedInstanceState == null)
+        {
+            loadFragment(new UpcomingFragment());
+        }
     }
+
+    public void loadFragment(Fragment fragment)
+    {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.main,fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+//        finish();
+    }
+
 }
