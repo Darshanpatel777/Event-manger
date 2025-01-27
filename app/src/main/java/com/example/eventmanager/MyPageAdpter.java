@@ -13,7 +13,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 public class MyPageAdpter  extends PagerAdapter {
 
-     private int imagearray[] = {R.drawable.yoga1,R.drawable.yoga2,R.drawable.yoga3,R.drawable.yoga4,
+     private int imagearray[] = {R.drawable.trikonasan,R.drawable.gomuk,R.drawable.yoga3,R.drawable.yoga4,
             R.drawable.yoga5,R.drawable.yoga6};
 
      private final String[] YogaName  = { "Yoga1",
